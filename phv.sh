@@ -1,6 +1,7 @@
 #!/bin/bash
-while :
-do
+
+#while :
+#do
     sudo /phv/phv
 
     file_path=/phv/data.log
@@ -16,10 +17,11 @@ do
     url=${url}'ID='$identity
     url=${url}'&temp='${arr[1]}
     url=${url}'&humid='${arr[2]}
-    url=${url}'&current='${arr[4]}
+    url=${url}'&current='${arr[5]}
     url=${url}'&VBatt='${arr[3]}
-    url=${url}'&ad='${arr[4]}
-    for i in {5..33}
+    url=${url}'&condition='${arr[4]}
+    url=${url}'&ad='${arr[5]}
+    for i in {6..34}
     do
         url=${url}','${arr[i]}
     done
@@ -36,6 +38,6 @@ do
     done
     # 600-2
     sleep 58
-done
+#done
 
 
