@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#while :
-#do
+while :
+do
     sudo /phv/phv
 
     file_path=/phv/data.log
@@ -37,7 +37,7 @@
         let 'line--'
     done
     # 600-2
-    sleep 58
-#done
+    sleep 298
+done
 
 
