@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sleep 20
+
 while :
 do
     sudo /phv/phv
